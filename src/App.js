@@ -10,7 +10,6 @@ import { ProfileProvider } from './context/profile.context';
 
 
 
-
 function App() {
   return (
     <ProfileProvider>
