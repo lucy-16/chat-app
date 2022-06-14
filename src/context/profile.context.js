@@ -58,6 +58,13 @@ export const ProfileProvider = ({ children }) => {
           userRef.off();
         }
 
+        if (userStatusRef) {
+          userStatusRef.off();
+        }
+
+        database.ref('.info/connected').off();
+
+
         setProfile(null);
         setIsLoading(false);
       }
@@ -66,8 +73,15 @@ export const ProfileProvider = ({ children }) => {
     return () => {
       authUnsub();
 
+      database.ref('.info/connected').off();
+
+
       if (userRef) {
         userRef.off();
+      }
+
+      if (userStatusRef) {
+        userStatusRef.off();
       }
     };
   }, []);

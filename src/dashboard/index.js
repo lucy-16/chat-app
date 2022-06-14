@@ -1,9 +1,9 @@
 import React from 'react';
 import { Drawer, Button, Divider, Alert} from 'rsuite';
 import { useProfile } from '../context/profile.context'; 
-import EditableInput from './EditableInput'; 
+import EditableInput from '../components/EditableInput'; 
 import { database } from '../misc/firebase'; 
-import ProviderBlock from '../components/ProviderBlock'; 
+import ProviderBlock from './ProviderBlock';  
 import AvatarUploadBtn from './AvatarUploadBtn';
 import { getUserUpdates } from '../misc/helpers'; 
 

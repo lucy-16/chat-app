@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import { Button, Drawer, Alert } from 'rsuite';
 import { useParams } from 'react-router';
 import { useModalState, useMediaQuery } from '../../../misc/custom-hooks';
-import EditableInput from '../../../dashboard/EditableInput'; 
+import EditableInput from '../../EditableInput';
 import { useCurrentRoom } from '../../../context/currentroom.context'; 
 import { database } from '../../../misc/firebase';
 
